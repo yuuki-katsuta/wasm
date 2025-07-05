@@ -3,8 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import init, { add } from "rust_wasm"; 
+
 function App() {
   const [count, setCount] = useState(0)
+
+  init().then(() => {
+    const sum: number = add(1, 2);
+    console.log(sum);
+  });
 
   return (
     <>

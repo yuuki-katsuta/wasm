@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+/rust_wasm/target/
+/rust_wasm/pkg/
+**/*.rs.bk
