@@ -8,6 +8,8 @@ import init, { add } from "rust_wasm";
 function App() {
   const [count, setCount] = useState(0)
 
+  console.log(count)
+
   init().then(() => {
     const sum: number = add(1, 2);
     console.log(sum);
