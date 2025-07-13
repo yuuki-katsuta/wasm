@@ -9,7 +9,8 @@ export default defineConfig({
         ['@yuuki-katsuta/babel-plugin-smart-console', {
           includeFileName: true,
           removeInProduction: true
-        }]
+        }],
+        ['@yuuki-katsuta/babel-plugin-remove-test-attributes']
       ]
     }
   })],
